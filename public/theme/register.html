@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/8b6502498a.js"></script>
+    <title>wedding</title>
+</head>
+
+<body>
+    <!-- pre registration effect -->
+    <div id="reg-form" class="">
+        <form action="" class="pos">
+            <div class="row">
+                <div class="col-md-4 m-auto text-center">
+                    <p class="color-ligth">WEDDING BUSINESS</p>
+                    <h1>Weddings & Events</h1>
+                    <p id="date"></p>
+                    <div class="form-group mt-4">
+                        <input type="text" class="form-control  rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control rounded-0" id="exampleInputPassword1" placeholder="PIN">
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-primary rounded-0">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- pre registration effect -->
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
+
+
+<script>
+    n = new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+</script>
+
+</html>
